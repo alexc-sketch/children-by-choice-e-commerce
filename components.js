@@ -114,7 +114,7 @@ const FOOTER_HTML = `
     <div class="footer-grid">
       <div class="footer-logo">
         <div class="logo-text">CHILDREN<br>BY <span>CHOICE</span></div>
-        <p>Supporting reproductive rights and access to healthcare resources across Queensland since 1972.</p>
+        <p>An independent non-profit Queensland-based organisation championing reproductive rights for over 50 years. Funded by the Queensland Government.</p>
         <div class="footer-social">
           <a href="#" title="Facebook">f</a>
           <a href="#" title="Instagram">in</a>
@@ -151,7 +151,7 @@ const FOOTER_HTML = `
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Children by Choice Association Incorporated. All rights reserved.</p>
+      <p>© Children by Choice Association Incorporated 2025. All rights reserved.</p>
       <div class="footer-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms & Conditions</a>
@@ -161,7 +161,7 @@ const FOOTER_HTML = `
   </div>
   <div class="footer-acknowledgement">
     <div class="container">
-      Children by Choice acknowledges Aboriginal and Torres Strait Islander peoples as the Traditional Custodians of Country throughout Australia and their continuing connection to lands, waters and communities.
+      Children by Choice acknowledges Aboriginal and Torres Strait Islander peoples as the Traditional Custodians of Country throughout Australia and the continuing connection to lands, waters and communities. In particular, we acknowledge the country north and south of the Brisbane River, as the home of both the Turrbul and Jagera nations. We pay our respect to them, their culture, and to their Elders both past and present.
     </div>
   </div>
 </footer>
