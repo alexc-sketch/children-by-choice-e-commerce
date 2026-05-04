@@ -56,8 +56,7 @@ const HEADER_HTML = `
           <a href="shop.html" class="nav-dropdown-item nav-dropdown-item-all">Shop All Merch →</a>
         </div>
       </div>
-      <a href="categories.html">Categories</a>
-      <a href="resources.html" class="resources-link">Order Resources ↗</a>
+      <a href="resources.html" class="resources-link">Resources</a>
     </div>
     <div class="shop-search">
       <input type="text" placeholder="Search products...">
