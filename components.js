@@ -53,6 +53,7 @@ const HEADER_HTML = `
           <a href="shop.html?cat=accessories" class="nav-dropdown-item">Accessories</a>
           <a href="shop.html?cat=posters" class="nav-dropdown-item">Posters &amp; Postcards</a>
           <div class="nav-dropdown-divider"></div>
+          <a href="categories.html" class="nav-dropdown-item nav-dropdown-item-all">View All Categories →</a>
           <a href="shop.html" class="nav-dropdown-item nav-dropdown-item-all">Shop All Merch →</a>
         </div>
       </div>
