@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Professional Resources — Children by Choice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div id="cart-components"></div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb" style="color:rgba(255,255,255,0.6);">
+      <a href="index.html" style="color:rgba(255,255,255,0.7);">Home</a>
+      <span>›</span>
+      <span style="color:#fff;">Professional Resources</span>
+    </div>
+    <h1>Order Professional Resources</h1>
+    <p>Free clinical materials for healthcare practitioners, clinics and community organisations across Queensland.</p>
+    <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+      <div style="background:rgba(255,255,255,0.12);border-radius:50px;padding:8px 18px;font-size:0.85rem;color:#fff;display:flex;align-items:center;gap:8px;">📋 Physical resources: $0 + $10 shipping</div>
+      <div style="background:rgba(255,255,255,0.12);border-radius:50px;padding:8px 18px;font-size:0.85rem;color:#fff;display:flex;align-items:center;gap:8px;">📄 Digital PDFs: Free instant download</div>
+    </div>
+  </div>
+</div>
+
+<!-- Shipping Notice Banner -->
+<div style="background:var(--pink-light);border-bottom:1px solid var(--pink);padding:12px 0;">
+  <div class="container" style="display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--purple-dark);">
+    <span style="font-size:1.1rem;">ℹ️</span>
+    <strong>Shipping Note:</strong> Physical resources are listed at $0.00 but a flat $10.00 shipping fee applies at checkout. Digital PDF resources are completely free — no shipping required.
+  </div>
+</div>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="catalog-layout">
+
+      <!-- Filter Sidebar -->
+      <aside class="filter-sidebar">
+        <h3>Filter Resources</h3>
+
+        <div class="filter-group">
+          <div class="filter-group-title">Format</div>
+          <label class="filter-option">
+            <input type="checkbox" checked>
+            <label>All Resources</label>
+            <span class="count">8</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Physical Booklets</label>
+            <span class="count">5</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Digital PDF</label>
+            <span class="count">3</span>
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group-title">Topic</div>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Abortion / RCA</label>
+            <span class="count">4</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Contraception</label>
+            <span class="count">2</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Pregnancy Options</label>
+            <span class="count">2</span>
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group-title">Cost</div>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Free (Digital)</label>
+            <span class="count">3</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>$0 + Shipping</label>
+            <span class="count">5</span>
+          </label>
+        </div>
+
+        <a class="filter-clear">Clear all filters</a>
+
+        <!-- Account CTA -->
+        <div style="margin-top:24px;background:var(--purple-bg);border-radius:10px;padding:16px;text-align:center;">
+          <div style="font-size:0.85rem;font-weight:600;margin-bottom:8px;">Track your orders & downloads</div>
+          <a href="account.html" class="btn btn-primary btn-sm btn-full">Sign In / Register</a>
+        </div>
+      </aside>
+
+      <!-- Resources Grid -->
+      <div>
+        <div class="catalog-toolbar">
+          <div class="catalog-count">Showing 8 resources</div>
+          <select class="sort-select">
+            <option>Sort by: Relevance</option>
+            <option>Sort by: Name A–Z</option>
+            <option>Format: Digital First</option>
+          </select>
+        </div>
+
+        <div class="product-grid product-grid-3">
+
+          <!-- Resource 1 — Physical -->
+          <div class="product-card">
+            <div class="product-card-img" style="background:var(--purple-dark);display:flex;align-items:center;justify-content:center;aspect-ratio:1;">
+              <span style="font-size:3.5rem;">📋</span>
+              <span class="product-badge" style="background:var(--purple-light);color:var(--purple-dark);">PHYSICAL</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand" style="color:var(--purple-mid);">Clinical Booklet</div>
+              <div class="product-title">RCA Booklet — Abortion Care in Queensland</div>
+              <div class="product-price">
+                <span class="price-free">$0.00</span>
+                <span style="font-size:0.78rem;color:var(--text-muted);">+ $10 shipping</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product-resource.html" class="btn btn-primary btn-sm" data-add-cart>Order Now</a>
+            </div>
+          </div>
+
+          <!-- Resource 2 — Digital -->
+          <div class="product-card">
+            <div class="product-card-img" style="background:var(--purple-mid);display:flex;align-items:center;justify-content:center;aspect-ratio:1;">
+              <span style="font-size:3.5rem;">📄</span>
+              <span class="product-badge" style="background:var(--pink);color:var(--purple-dark);">DIGITAL PDF</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand" style="color:var(--purple-mid);">Digital Resource</div>
+              <div class="product-title">Pregnancy Options Counselling Guide (PDF)</div>
+              <div class="product-price">
+                <span class="price-free">FREE</span>
+                <span style="font-size:0.78rem;color:var(--text-muted);">Instant download</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product-resource.html" class="btn btn-pink btn-sm" data-add-cart>Download Free</a>
+            </div>
+          </div>
+
+          <!-- Resource 3 — Physical -->
+          <div class="product-card">
+            <div class="product-card-img" style="background:var(--purple-dark);display:flex;align-items:center;justify-content:center;aspect-ratio:1;">
+              <span style="font-size:3.5rem;">📋</span>
+              <span class="product-badge" style="background:var(--purple-light);color:var(--purple-dark);">PHYSICAL</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand" style="color:var(--purple-mid);">Clinical Booklet</div>
+              <div class="product-title">Contraception Information Booklet</div>
+              <div class="product-price">
+                <span class="price-free">$0.00</span>
+                <span style="font-size:0.78rem;color:var(--text-muted);">+ $10 shipping</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product-resource.html" class="btn btn-primary btn-sm" data-add-cart>Order Now</a>
+            </div>
+          </div>
+
+          <!-- Resource 4 — Digital -->
+          <div class="product-card">
+            <div class="product-card-img" style="background:var(--purple-mid);display:flex;align-items:center;justify-content:center;aspect-ratio:1;">
+              <span style="font-size:3.5rem;">📄</span>
+              <span class="product-badge" style="background:var(--pink);color:var(--purple-dark);">DIGITAL PDF</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand" style="color:var(--purple-mid);">Digital Resource</div>
+              <div class="product-title">RCA Referral Pathways — QLD (PDF)</div>
+              <div class="product-price">
+                <span class="price-free">FREE</span>
+                <span style="font-size:0.78rem;color:var(--text-muted);">Instant download</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product-resource.html" class="btn btn-pink btn-sm" data-add-cart>Download Free</a>
+            </div>
+          </div>
+
+          <!-- Resource 5 — Physical -->
+          <div class="product-card">
+            <div class="product-card-img" style="background:var(--purple-dark);display:flex;align-items:center;justify-content:center;aspect-ratio:1;">
+              <span style="font-size:3.5rem;">📋</span>
+              <span class="product-badge" style="background:var(--purple-light);color:var(--purple-dark);">PHYSICAL</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand" style="color:var(--purple-mid);">Clinical Booklet</div>
+              <div class="product-title">Medical Abortion — Patient Information Booklet</div>
+              <div class="product-price">
+                <span class="price-free">$0.00</span>
+                <span style="font-size:0.78rem;color:var(--text-muted);">+ $10 shipping</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product-resource.html" class="btn btn-primary btn-sm" data-add-cart>Order Now</a>
+            </div>
+          </div>
+
+          <!-- Resource 6 — Digital -->
+          <div class="product-card">
+            <div class="product-card-img" style="background:var(--purple-mid);display:flex;align-items:center;justify-content:center;aspect-ratio:1;">
+              <span style="font-size:3.5rem;">📄</span>
+              <span class="product-badge" style="background:var(--pink);color:var(--purple-dark);">DIGITAL PDF</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand" style="color:var(--purple-mid);">Digital Resource</div>
+              <div class="product-title">Pregnancy Options Counselling — Clinician Guide (PDF)</div>
+              <div class="product-price">
+                <span class="price-free">FREE</span>
+                <span style="font-size:0.78rem;color:var(--text-muted);">Instant download</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product-resource.html" class="btn btn-pink btn-sm" data-add-cart>Download Free</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== IN YOUR WORDS FEATURE BLOCK ===== -->
+<section class="iyw-feature">
+  <div class="iyw-feature-inner">
+
+    <!-- Left: Product Visual -->
+    <div class="iyw-feature-img">
+      <div class="iyw-feature-img-placeholder">
+        <div class="poster-mock">
+          <div class="poster-headline">Children by Choice</div>
+          <div class="poster-title">Your Story<br>In Your<br>Words</div>
+        </div>
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);text-align:center;margin-top:10px;letter-spacing:0.06em;text-transform:uppercase;">Abortion is Healthcare &mdash; Let&rsquo;s Change the Narrative</div>
+      </div>
+    </div>
+
+    <!-- Right: Content Panel -->
+    <div class="iyw-feature-content">
+      <div class="iyw-eyebrow">In Your Words</div>
+      <h2>Poster Pack</h2>
+      <p>We want to <strong>rewrite the narrative around abortion</strong>, continue to <strong>break down shame and stigma</strong> and provide perspective to others on why abortion is healthcare.<br>Help us change how the world views abortions.</p>
+      <div class="iyw-pack-contents">
+        <span class="iyw-pack-item">🖼 2&times; Posters</span>
+        <span class="iyw-pack-item">📮 10&times; Postcards</span>
+        <span class="iyw-pack-item">✨ 10&times; Stickers</span>
+      </div>
+      <a href="product.html" class="btn btn-primary btn-lg" style="align-self:flex-start;">Order your free pack now!</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== DIGITAL RESOURCES CTA ===== -->
+<section class="section" style="background:var(--purple-dark);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+      <div>
+        <div class="label-sm mb-8" style="color:var(--pink);">Also Available Online</div>
+        <h2 style="color:#fff;margin-bottom:16px;">Access Our Digital Resources Instantly</h2>
+        <p style="color:rgba(255,255,255,0.8);font-size:1.05rem;line-height:1.7;margin-bottom:28px;">Can't wait for a physical delivery? Browse and download our full library of digital resources — including fact sheets, referral guides and clinical tools — directly from the Children by Choice main website. Free, instant, no account required.</p>
+        <a href="https://www.childrenbychoice.org.au/for-professionals/downloadable-resources-information/" target="_blank" rel="noopener" class="btn btn-pink btn-lg">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Digital Resources
+        </a>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-top:12px;">Opens the Children by Choice main website ↗</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:32px;">
+        <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--pink);margin-bottom:20px;">What's available digitally</div>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <span style="font-size:1.2rem;">📄</span>
+            <div>
+              <div style="color:#fff;font-weight:600;font-size:0.95rem;">Fact Sheets</div>
+              <div style="color:rgba(255,255,255,0.65);font-size:0.83rem;">Abortion, contraception, pregnancy options</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <span style="font-size:1.2rem;">🗺</span>
+            <div>
+              <div style="color:#fff;font-weight:600;font-size:0.95rem;">Referral Pathway Guides</div>
+              <div style="color:rgba(255,255,255,0.65);font-size:0.83rem;">Queensland RCA referral maps and contacts</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <span style="font-size:1.2rem;">🩺</span>
+            <div>
+              <div style="color:#fff;font-weight:600;font-size:0.95rem;">Clinical Tools</div>
+              <div style="color:rgba(255,255,255,0.65);font-size:0.83rem;">Counselling guides and practitioner resources</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <span style="font-size:1.2rem;">📊</span>
+            <div>
+              <div style="color:#fff;font-weight:600;font-size:0.95rem;">Research &amp; Reports</div>
+              <div style="color:rgba(255,255,255,0.65);font-size:0.83rem;">Policy documents and advocacy materials</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ SECTION ===== -->
+<section class="section" style="background:var(--grey-bg);">
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto;">
+      <div class="label-sm mb-8" style="text-align:center;">Support</div>
+      <h2 style="text-align:center;margin-bottom:40px;">Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Why is there an order limit on your resources?
+            <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body">
+            <p>Many of our resources are the direct result of grant projects and activities within our Education and Community Engagement Team. Unfortunately, we have limited capacity to stock physical resources, and to ensure all services are able to receive CbyC resources we have put limits on our online requests. If you would like to make a bulk order, please contact our team at <a href="mailto:ed@childrenbychoice.org.au" style="color:var(--purple-mid);font-weight:600;">ed@childrenbychoice.org.au</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Do your resources cost anything?
+            <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body">
+            <p>All our resources are free of charge. Depending on the type of resource you order, there may be shipping fees attached to keep up with our high capacity. If you have any questions or clarifications about shipping costs, please contact us at <a href="mailto:ed@childrenbychoice.org.au" style="color:var(--purple-mid);font-weight:600;">ed@childrenbychoice.org.au</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Where can I pick up a resource request?
+            <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body">
+            <p>There's no need for pick-up, we ship resource requests directly to services! Please add your preferred address, phone number, and email on your request so we can contact you if needed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            I have another question. Where can I get support?
+            <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-body">
+            <p>Please contact our Education and Community Engagement Team at <a href="mailto:ed@childrenbychoice.org.au" style="color:var(--purple-mid);font-weight:600;">ed@childrenbychoice.org.au</a> or call us on <a href="tel:0733579933" style="color:var(--purple-mid);font-weight:600;">(07) 3357 9933</a> for more information about our resources.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

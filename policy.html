@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping &amp; Returns Policy — Children by Choice Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Policy page specific styles */
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .policy-toc {
+      position: sticky;
+      top: 80px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 24px;
+    }
+    .policy-toc h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .policy-toc-list { list-style: none; }
+    .policy-toc-list li { margin-bottom: 4px; }
+    .policy-toc-list a {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      padding: 6px 10px;
+      border-radius: 6px;
+      display: block;
+      transition: all var(--transition);
+      border-left: 2px solid transparent;
+    }
+    .policy-toc-list a:hover,
+    .policy-toc-list a.active {
+      background: var(--purple-bg);
+      color: var(--purple-dark);
+      border-left-color: var(--purple-dark);
+    }
+    .policy-toc-divider { height: 1px; background: var(--border); margin: 12px 0; }
+    .policy-toc-list a.toc-other { color: var(--text-muted); font-size: 0.82rem; }
+
+    .policy-body { max-width: 720px; }
+    .policy-section { margin-bottom: 48px; scroll-margin-top: 100px; }
+    .policy-section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--purple-bg);
+    }
+    .policy-section h3 {
+      font-size: 1.05rem;
+      margin: 24px 0 10px;
+      color: var(--purple-dark);
+    }
+    .policy-section p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-body);
+      margin-bottom: 14px;
+    }
+    .policy-section ul, .policy-section ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    .policy-section li {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-body);
+      margin-bottom: 6px;
+    }
+    .policy-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+    .policy-table th {
+      background: var(--purple-bg);
+      color: var(--text-dark);
+      font-weight: 700;
+      padding: 12px 16px;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    .policy-table td {
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      color: var(--text-body);
+      vertical-align: top;
+    }
+    .policy-table tr:nth-child(even) td { background: var(--grey-bg); }
+    .policy-highlight {
+      background: var(--purple-bg);
+      border-left: 4px solid var(--purple-dark);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+    .policy-highlight strong { color: var(--purple-dark); }
+    .policy-contact-card {
+      background: var(--purple-dark);
+      border-radius: var(--radius-card);
+      padding: 28px;
+      color: #fff;
+      margin-top: 16px;
+    }
+    .policy-contact-card h4 { color: #fff; margin-bottom: 12px; }
+    .policy-contact-card p { color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-bottom: 8px; }
+    .policy-contact-card a { color: var(--pink); font-weight: 600; }
+    .policy-meta {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .policy-meta span { display: flex; align-items: center; gap: 6px; }
+
+    @media (max-width: 900px) {
+      .policy-layout { grid-template-columns: 1fr; }
+      .policy-toc { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="site-header"></div>
+<div id="cart-components"></div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb" style="color:rgba(255,255,255,0.6);">
+      <a href="index.html" style="color:rgba(255,255,255,0.7);">Home</a>
+      <span>›</span>
+      <span style="color:#fff;">Shipping &amp; Returns Policy</span>
+    </div>
+    <h1>Shipping &amp; Returns Policy</h1>
+    <p>Everything you need to know about delivery, returns and professional resource orders.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="policy-layout">
+
+      <!-- Table of Contents Sidebar -->
+      <aside class="policy-toc">
+        <h4>On This Page</h4>
+        <ul class="policy-toc-list">
+          <li><a href="#shipping-merchandise" class="active">Shipping — Merchandise</a></li>
+          <li><a href="#shipping-resources">Shipping — Resources</a></li>
+          <li><a href="#delivery-times">Delivery Times</a></li>
+          <li><a href="#returns">Returns &amp; Exchanges</a></li>
+          <li><a href="#digital-downloads">Digital Downloads</a></li>
+          <li><a href="#damaged-goods">Damaged or Lost Orders</a></li>
+        </ul>
+        <div class="policy-toc-divider"></div>
+        <ul class="policy-toc-list">
+          <li><a href="policy-terms.html" class="toc-other">Terms &amp; Conditions →</a></li>
+          <li><a href="policy-privacy.html" class="toc-other">Privacy Policy →</a></li>
+        </ul>
+        <div class="policy-toc-divider"></div>
+        <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">
+          Last updated:<br><strong style="color:var(--text-dark);">1 May 2026</strong>
+        </div>
+      </aside>
+
+      <!-- Policy Body -->
+      <div class="policy-body">
+
+        <div class="policy-meta">
+          <span>📅 Last updated: 1 May 2026</span>
+          <span>📋 Version 1.0</span>
+          <span>✉️ Questions? <a href="mailto:shop@childrenbychoice.org.au" style="color:var(--purple-mid);">shop@childrenbychoice.org.au</a></span>
+        </div>
+
+        <!-- Section 1: Shipping Merchandise -->
+        <div class="policy-section" id="shipping-merchandise">
+          <h2>1. Shipping — Merchandise</h2>
+          <p>All merchandise orders (T-shirts, accessories, posters, postcards and other physical products) are dispatched from Brisbane, Queensland. We ship Australia-wide using Australia Post tracked services.</p>
+
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th>Order Value</th>
+                <th>Shipping Method</th>
+                <th>Cost</th>
+                <th>Estimated Delivery</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Under $100</td>
+                <td>Australia Post Standard</td>
+                <td><strong>$10.00 flat rate</strong></td>
+                <td>3–7 business days</td>
+              </tr>
+              <tr>
+                <td>$100 or over</td>
+                <td>Australia Post Standard</td>
+                <td><strong>FREE</strong></td>
+                <td>3–7 business days</td>
+              </tr>
+              <tr>
+                <td>Any value</td>
+                <td>Australia Post Express</td>
+                <td><strong>$18.00</strong></td>
+                <td>1–3 business days</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="policy-highlight">
+            <strong>Free shipping threshold:</strong> Orders totalling $100 or more (after any discounts) qualify for free standard shipping automatically at checkout. No coupon code required.
+          </div>
+
+          <h3>International Shipping</h3>
+          <p>At this time, we are only able to ship merchandise within Australia. We hope to offer international shipping in the future. If you are located outside Australia and wish to purchase, please <a href="https://www.childrenbychoice.org.au/get-in-touch/" style="color:var(--purple-mid);">contact us</a> to discuss options.</p>
+        </div>
+
+        <!-- Section 2: Shipping Resources -->
+        <div class="policy-section" id="shipping-resources">
+          <h2>2. Shipping — Professional Resources</h2>
+          <p>Physical professional resources (booklets, pamphlets and print materials) are listed at <strong>$0.00</strong> as they are provided free of charge. However, a flat shipping fee applies to cover postage and handling costs.</p>
+
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th>Resource Type</th>
+                <th>Product Cost</th>
+                <th>Shipping Fee</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Physical Booklets &amp; Print Materials</td>
+                <td>$0.00</td>
+                <td><strong>$10.00 flat rate</strong></td>
+                <td>Shipped directly to your service address</td>
+              </tr>
+              <tr>
+                <td>Digital PDF Resources</td>
+                <td>$0.00</td>
+                <td><strong>FREE</strong></td>
+                <td>Instant download after order confirmation</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="policy-highlight">
+            <strong>Order limits apply.</strong> To ensure equitable access across all Queensland services, we place limits on the quantity of physical resources that can be ordered online. If you require a bulk order, please contact our Education and Community Engagement Team at <a href="mailto:ed@childrenbychoice.org.au" style="color:var(--purple-dark);">ed@childrenbychoice.org.au</a>.
+          </div>
+
+          <h3>Resource Delivery Address</h3>
+          <p>Physical resources are shipped directly to your nominated service or clinic address. Please ensure your delivery address, phone number and email are entered correctly at checkout so our team can contact you if needed.</p>
+        </div>
+
+        <!-- Section 3: Delivery Times -->
+        <div class="policy-section" id="delivery-times">
+          <h2>3. Delivery Times</h2>
+          <p>All orders are processed within <strong>1–2 business days</strong> of payment confirmation. Orders placed on weekends or public holidays will be processed on the next business day.</p>
+
+          <p>Once dispatched, you will receive a shipping confirmation email containing your Australia Post tracking number. Delivery timeframes are estimates only and may vary during peak periods (e.g. Christmas, Easter).</p>
+
+          <h3>Processing Delays</h3>
+          <p>During high-demand periods or if stock levels require a reorder, processing times may extend to 3–5 business days. We will notify you by email if your order is subject to any delay.</p>
+        </div>
+
+        <!-- Section 4: Returns & Exchanges -->
+        <div class="policy-section" id="returns">
+          <h2>4. Returns &amp; Exchanges</h2>
+          <p>We want you to love your purchase. If you are not completely satisfied, we offer returns and exchanges under the following conditions.</p>
+
+          <h3>Eligibility</h3>
+          <ul>
+            <li>Items must be returned within <strong>30 days</strong> of the delivery date.</li>
+            <li>Items must be unworn, unwashed and in their original condition with tags attached.</li>
+            <li>Items must be returned in their original packaging where possible.</li>
+            <li>Sale items and items marked as final sale are not eligible for return or exchange.</li>
+          </ul>
+
+          <h3>How to Initiate a Return</h3>
+          <ol>
+            <li>Email <a href="mailto:shop@childrenbychoice.org.au" style="color:var(--purple-mid);">shop@childrenbychoice.org.au</a> with your order number and reason for return.</li>
+            <li>Our team will respond within 2 business days with a return authorisation and instructions.</li>
+            <li>Pack the item securely and send it to the address provided in the return authorisation.</li>
+            <li>Once received and inspected, we will process your refund or exchange within 5 business days.</li>
+          </ol>
+
+          <h3>Return Shipping Costs</h3>
+          <p>Customers are responsible for return shipping costs unless the item is faulty, damaged or incorrectly sent. In those cases, we will provide a prepaid return label.</p>
+
+          <h3>Refunds</h3>
+          <p>Approved refunds will be credited to your original payment method. Please allow 5–10 business days for the refund to appear, depending on your bank or payment provider.</p>
+
+          <div class="policy-highlight">
+            <strong>Note on professional resources:</strong> Physical resources are provided free of charge and are not eligible for return or exchange. If you received incorrect or damaged resources, please contact <a href="mailto:ed@childrenbychoice.org.au" style="color:var(--purple-dark);">ed@childrenbychoice.org.au</a>.
+          </div>
+        </div>
+
+        <!-- Section 5: Digital Downloads -->
+        <div class="policy-section" id="digital-downloads">
+          <h2>5. Digital Downloads</h2>
+          <p>Digital PDF resources are available for immediate download following order confirmation. Download links are provided in your order confirmation email and are also accessible via your <a href="account.html" style="color:var(--purple-mid);">My Account</a> portal under the Downloads tab.</p>
+
+          <h3>Download Access</h3>
+          <p>Download links remain active for <strong>12 months</strong> from the date of purchase. If your link has expired or you are experiencing difficulties downloading, please contact us and we will reissue access.</p>
+
+          <h3>Refunds on Digital Products</h3>
+          <p>As digital products are delivered immediately upon purchase, we are unable to offer refunds once a download has been accessed. If you experience a technical issue with a file, please contact us and we will resolve it promptly.</p>
+        </div>
+
+        <!-- Section 6: Damaged or Lost -->
+        <div class="policy-section" id="damaged-goods">
+          <h2>6. Damaged or Lost Orders</h2>
+          <p>If your order arrives damaged or does not arrive within the estimated delivery window, please contact us as soon as possible so we can investigate and resolve the issue.</p>
+
+          <h3>Damaged Items</h3>
+          <p>If your item arrives damaged, please email <a href="mailto:shop@childrenbychoice.org.au" style="color:var(--purple-mid);">shop@childrenbychoice.org.au</a> with your order number and clear photos of the damage within <strong>7 days</strong> of delivery. We will arrange a replacement or refund at no additional cost.</p>
+
+          <h3>Lost in Transit</h3>
+          <p>If your tracking shows no movement for more than 10 business days, or your order has not arrived within 14 business days of dispatch, please contact us. We will lodge an investigation with Australia Post on your behalf and keep you updated throughout the process.</p>
+
+          <!-- Contact Card -->
+          <div class="policy-contact-card">
+            <h4>Need Help With Your Order?</h4>
+            <p>Our team is here to help. Get in touch and we'll resolve your query as quickly as possible.</p>
+            <p>📧 <a href="mailto:shop@childrenbychoice.org.au">shop@childrenbychoice.org.au</a></p>
+            <p>📞 <a href="tel:0733579933">(07) 3357 9933</a> — Monday to Friday, 9am–5pm AEST</p>
+            <p>🌐 <a href="https://www.childrenbychoice.org.au/get-in-touch/">Contact form on main website</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related Policies -->
+<div style="background:var(--grey-bg);border-top:1px solid var(--border);padding:40px 0;">
+  <div class="container">
+    <div style="font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;">Related Policies</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="policy.html" style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--purple-dark);border-radius:50px;padding:10px 20px;font-size:0.9rem;font-weight:600;color:var(--purple-dark);">
+        📦 Shipping &amp; Returns (current)
+      </a>
+      <a href="policy-terms.html" style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--border);border-radius:50px;padding:10px 20px;font-size:0.9rem;font-weight:600;color:var(--text-dark);">
+        📋 Terms &amp; Conditions
+      </a>
+      <a href="policy-privacy.html" style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--border);border-radius:50px;padding:10px 20px;font-size:0.9rem;font-weight:600;color:var(--text-dark);">
+        🔒 Privacy Policy
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="site-footer"></div>
+<script src="components.js"></script>
+<script src="main.js"></script>
+<script>
+  // Highlight active TOC item on scroll
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.policy-section');
+    const tocLinks = document.querySelectorAll('.policy-toc-list a:not(.toc-other)');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(link => link.classList.remove('active'));
+          const active = document.querySelector(`.policy-toc-list a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    sections.forEach(s => observer.observe(s));
+  });
+</script>
+</body>
+</html>

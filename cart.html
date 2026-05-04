@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart — Children by Choice Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .cart-page-grid { display: grid; grid-template-columns: 1fr 360px; gap: 40px; align-items: start; }
+    .cart-table { width: 100%; border-collapse: collapse; }
+    .cart-table th { text-align: left; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); padding: 0 16px 16px; border-bottom: 2px solid var(--border); }
+    .cart-table td { padding: 20px 16px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    .cart-table tr:last-child td { border-bottom: none; }
+    .cart-product-cell { display: flex; align-items: center; gap: 16px; }
+    .cart-product-img { width: 80px; height: 80px; border-radius: 10px; background: var(--purple-bg); display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0; }
+    .cart-product-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
+    .cart-product-variant { font-size: 0.82rem; color: var(--text-muted); }
+    .cart-product-remove { font-size: 0.8rem; color: var(--purple-mid); text-decoration: underline; cursor: pointer; margin-top: 6px; display: block; }
+    .cart-qty-cell { display: flex; align-items: center; gap: 0; border: 1.5px solid var(--border); border-radius: 50px; overflow: hidden; width: fit-content; }
+    .cart-qty-cell button { background: none; border: none; padding: 8px 14px; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--text-dark); transition: background var(--transition); }
+    .cart-qty-cell button:hover { background: var(--purple-bg); }
+    .cart-qty-cell span { padding: 0 8px; font-weight: 600; min-width: 32px; text-align: center; }
+    .cart-price-cell { font-weight: 700; color: var(--purple-dark); font-size: 1rem; }
+    .coupon-row { display: flex; gap: 10px; margin-top: 20px; }
+    .coupon-row input { flex: 1; border: 1.5px solid var(--border); border-radius: 50px; padding: 10px 18px; font-size: 0.9rem; outline: none; }
+    .coupon-row input:focus { border-color: var(--purple-mid); }
+    @media (max-width: 768px) {
+      .cart-page-grid { grid-template-columns: 1fr; }
+      .cart-table th:nth-child(3), .cart-table td:nth-child(3) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="site-header"></div>
+<div id="cart-components"></div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb" style="color:rgba(255,255,255,0.6);">
+      <a href="index.html" style="color:rgba(255,255,255,0.7);">Home</a>
+      <span>›</span>
+      <span style="color:#fff;">Your Cart</span>
+    </div>
+    <h1>Your Cart</h1>
+    <p>Review your items before proceeding to checkout.</p>
+  </div>
+</div>
+
+<!-- Progress Steps -->
+<div style="background:var(--grey-bg);border-bottom:1px solid var(--border);padding:16px 0;">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:0;max-width:500px;">
+      <div style="display:flex;align-items:center;gap:8px;font-size:0.88rem;font-weight:700;color:var(--purple-dark);">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--purple-dark);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;">1</div>
+        Cart
+      </div>
+      <div style="flex:1;height:2px;background:var(--border);margin:0 12px;"></div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:0.88rem;font-weight:600;color:var(--text-muted);">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--border);color:var(--text-muted);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;">2</div>
+        Checkout
+      </div>
+      <div style="flex:1;height:2px;background:var(--border);margin:0 12px;"></div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:0.88rem;font-weight:600;color:var(--text-muted);">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--border);color:var(--text-muted);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;">3</div>
+        Confirmation
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="cart-page-grid">
+
+      <!-- Cart Items Table -->
+      <div>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Item 1 -->
+            <tr>
+              <td>
+                <div class="cart-product-cell">
+                  <div class="cart-product-img">👕</div>
+                  <div>
+                    <div class="cart-product-name">CbyC White T-Shirt — Liberal Jane Artist</div>
+                    <div class="cart-product-variant">Size: M · Colour: White</div>
+                    <span class="cart-product-remove">Remove</span>
+                  </div>
+                </div>
+              </td>
+              <td><span class="cart-price-cell">$45.00</span></td>
+              <td>
+                <div class="cart-qty-cell">
+                  <button class="qty-btn" data-dir="down">−</button>
+                  <span>1</span>
+                  <button class="qty-btn" data-dir="up">+</button>
+                </div>
+              </td>
+              <td><span class="cart-price-cell">$45.00</span></td>
+            </tr>
+            <!-- Item 2 -->
+            <tr>
+              <td>
+                <div class="cart-product-cell">
+                  <div class="cart-product-img">👂</div>
+                  <div>
+                    <div class="cart-product-name">My Body My Choice Earrings</div>
+                    <div class="cart-product-variant">Haus of Dizzy × CbyC</div>
+                    <span class="cart-product-remove">Remove</span>
+                  </div>
+                </div>
+              </td>
+              <td><span class="cart-price-cell">$39.00</span></td>
+              <td>
+                <div class="cart-qty-cell">
+                  <button class="qty-btn" data-dir="down">−</button>
+                  <span>1</span>
+                  <button class="qty-btn" data-dir="up">+</button>
+                </div>
+              </td>
+              <td><span class="cart-price-cell">$39.00</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Coupon Code -->
+        <div style="margin-top:24px;padding:20px;background:var(--grey-bg);border-radius:12px;">
+          <div style="font-size:0.9rem;font-weight:600;margin-bottom:12px;">Have a coupon code?</div>
+          <div class="coupon-row">
+            <input type="text" placeholder="Enter coupon code">
+            <button class="btn btn-outline btn-sm">Apply</button>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <a href="shop.html" class="btn btn-outline btn-sm">← Continue Shopping</a>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div>
+        <div class="order-summary-card">
+          <h3>Order Summary</h3>
+
+          <div class="order-line">
+            <div class="order-line-img" style="background:var(--purple-bg);display:flex;align-items:center;justify-content:center;font-size:1.5rem;">👕</div>
+            <div class="order-line-details">
+              <div class="order-line-title">CbyC White T-Shirt — Liberal Jane</div>
+              <div class="order-line-variant">M · White · Qty 1</div>
+            </div>
+            <div class="order-line-price">$45.00</div>
+          </div>
+
+          <div class="order-line">
+            <div class="order-line-img" style="background:var(--purple-bg);display:flex;align-items:center;justify-content:center;font-size:1.5rem;">👂</div>
+            <div class="order-line-details">
+              <div class="order-line-title">My Body My Choice Earrings</div>
+              <div class="order-line-variant">Haus of Dizzy · Qty 1</div>
+            </div>
+            <div class="order-line-price">$39.00</div>
+          </div>
+
+          <div class="order-totals">
+            <div class="order-total-row"><span>Subtotal</span><span>$84.00</span></div>
+            <div class="order-total-row"><span>Shipping</span><span>$10.00</span></div>
+            <div class="order-total-row"><span>Discount</span><span style="color:#2a9d5c;">—</span></div>
+            <div class="order-total-row grand"><span>Total (AUD)</span><span>$94.00</span></div>
+          </div>
+
+          <div style="margin-top:20px;">
+            <a href="checkout.html" class="btn btn-primary btn-full btn-lg">Proceed to Checkout →</a>
+          </div>
+
+          <div style="margin-top:16px;text-align:center;">
+            <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:10px;">Secure checkout powered by</div>
+            <div class="payment-icons" style="justify-content:center;">
+              <span class="payment-icon">Visa</span>
+              <span class="payment-icon">Mastercard</span>
+              <span class="payment-icon">PayPal</span>
+              <span class="payment-icon">Afterpay</span>
+            </div>
+          </div>
+
+          <div style="margin-top:16px;background:var(--purple-bg);border-radius:8px;padding:12px;font-size:0.82rem;color:var(--text-body);display:flex;gap:8px;align-items:flex-start;">
+            <span>🚚</span>
+            <span>Add <strong>$16.00</strong> more to qualify for <strong>free shipping</strong>!</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

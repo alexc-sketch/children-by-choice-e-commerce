@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Merchandise — Children by Choice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div id="cart-components"></div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb" style="color:rgba(255,255,255,0.6);">
+      <a href="index.html" style="color:rgba(255,255,255,0.7);">Home</a>
+      <span>›</span>
+      <span style="color:#fff;">Shop All Merchandise</span>
+    </div>
+    <h1>Shop All Merchandise</h1>
+    <p>Artist collaborations, advocacy apparel and accessories — every purchase supports Children by Choice.</p>
+  </div>
+</div>
+
+<!-- Mobile Filter Button -->
+<div class="container" style="padding-top:16px;display:none;" id="mobileFilterRow">
+  <button class="btn btn-outline btn-sm" id="mobileFilterBtn">⚙ Filters</button>
+</div>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="catalog-layout">
+
+      <!-- Filter Sidebar -->
+      <aside class="filter-sidebar">
+        <h3>Filter Products</h3>
+
+        <div class="filter-group">
+          <div class="filter-group-title">Category</div>
+          <label class="filter-option">
+            <input type="checkbox" checked>
+            <label>All Merchandise</label>
+            <span class="count">12</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>T-Shirts</label>
+            <span class="count">2</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Accessories</label>
+            <span class="count">8</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Posters & Postcards</label>
+            <span class="count">3</span>
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group-title">Brand / Artist</div>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Haus of Dizzy</label>
+            <span class="count">4</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>Liberal Jane</label>
+            <span class="count">5</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>CbyC Original</label>
+            <span class="count">3</span>
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group-title">Price Range</div>
+          <div class="price-range">
+            <input type="number" placeholder="$0" value="0">
+            <span>–</span>
+            <input type="number" placeholder="$100" value="100">
+          </div>
+          <button class="btn btn-primary btn-sm" style="margin-top:12px;width:100%;">Apply</button>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group-title">Availability</div>
+          <label class="filter-option">
+            <input type="checkbox" checked>
+            <label>In Stock</label>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox">
+            <label>On Sale</label>
+            <span class="count">2</span>
+          </label>
+        </div>
+
+        <a class="filter-clear">Clear all filters</a>
+      </aside>
+
+      <!-- Product Grid -->
+      <div>
+        <div class="catalog-toolbar">
+          <div class="catalog-count">Showing 12 products</div>
+          <select class="sort-select">
+            <option>Sort by: Popularity</option>
+            <option>Sort by: Price (Low–High)</option>
+            <option>Sort by: Price (High–Low)</option>
+            <option>Sort by: Newest</option>
+          </select>
+        </div>
+
+        <div class="product-grid product-grid-3">
+
+          <!-- T-Shirt 1 -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder">
+              <span>👕</span>
+              <span class="product-badge sale">SALE</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand">Liberal Jane × CbyC</div>
+              <div class="product-title">CbyC White T-Shirt — Liberal Jane Artist</div>
+              <div class="product-price">
+                <span class="price-current">$45.00</span>
+                <span class="price-original">$50.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm">Select Options</a>
+            </div>
+          </div>
+
+          <!-- T-Shirt 2 -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder">
+              <span>👕</span>
+              <span class="product-badge sale">SALE</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand">CbyC Original</div>
+              <div class="product-title">Disruptive Defiant Feminist T-Shirt</div>
+              <div class="product-price">
+                <span class="price-current">$45.00</span>
+                <span class="price-original">$50.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm">Select Options</a>
+            </div>
+          </div>
+
+          <!-- Earrings 1 -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>👂</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">Haus of Dizzy × CbyC</div>
+              <div class="product-title">My Body My Choice Earrings</div>
+              <div class="product-price">
+                <span class="price-current">$39.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm" data-add-cart>Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Earrings 2 -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>👂</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">Haus of Dizzy × CbyC</div>
+              <div class="product-title">Pro Choice Earrings</div>
+              <div class="product-price">
+                <span class="price-current">$39.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm" data-add-cart>Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Earrings 3 -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>👂</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">Haus of Dizzy × CbyC</div>
+              <div class="product-title">Repro Rights Earrings</div>
+              <div class="product-price">
+                <span class="price-current">$39.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm" data-add-cart>Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Earrings 4 -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>👂</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">Haus of Dizzy × CbyC</div>
+              <div class="product-title">Abortion is Healthcare Earrings</div>
+              <div class="product-price">
+                <span class="price-current">$39.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm" data-add-cart>Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Tote 1 -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>👜</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">CbyC Original</div>
+              <div class="product-title">Disruptive Defiant Feminist Tote Bag — Black</div>
+              <div class="product-price">
+                <span class="price-current">$12.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm" data-add-cart>Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Tote 2 -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>👜</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">Liberal Jane × CbyC</div>
+              <div class="product-title">CbyC Tote Bag — Liberal Jane Artist</div>
+              <div class="product-price">
+                <span class="price-current">$29.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm" data-add-cart>Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Poster -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>🖼</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">Liberal Jane × CbyC</div>
+              <div class="product-title">Liberal Jane Poster (A2 / A3)</div>
+              <div class="product-price">
+                <span class="price-current">From $10.00</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm">Select Options</a>
+            </div>
+          </div>
+
+          <!-- Sticker -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>🏷</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">Liberal Jane × CbyC</div>
+              <div class="product-title">Liberal Jane Sticker</div>
+              <div class="product-price">
+                <span class="price-current">$1.50</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm" data-add-cart>Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Postcard -->
+          <div class="product-card">
+            <div class="product-card-img img-placeholder"><span>📮</span></div>
+            <div class="product-card-body">
+              <div class="product-brand">Liberal Jane × CbyC</div>
+              <div class="product-title">Liberal Jane Postcard</div>
+              <div class="product-price">
+                <span class="price-current">$2.50</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="product.html" class="btn btn-primary btn-sm" data-add-cart>Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Resources CTA Card -->
+          <div class="product-card" style="background:var(--purple-bg);border:2px dashed var(--purple-light);">
+            <div class="product-card-img" style="background:var(--purple-dark);display:flex;align-items:center;justify-content:center;aspect-ratio:1;">
+              <span style="font-size:3rem;">📋</span>
+            </div>
+            <div class="product-card-body">
+              <div class="product-brand" style="color:var(--purple-mid);">For Clinics & Professionals</div>
+              <div class="product-title">Need Professional Resources?</div>
+              <p style="font-size:0.82rem;color:var(--text-muted);margin-top:4px;">Free booklets and digital PDFs for healthcare practitioners.</p>
+            </div>
+            <div class="product-card-footer">
+              <a href="resources.html" class="btn btn-outline btn-sm">Order Resources →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div style="display:flex;justify-content:center;gap:8px;margin-top:40px;">
+          <button class="btn btn-primary btn-sm">1</button>
+          <button class="btn btn-outline btn-sm">2</button>
+          <button class="btn btn-outline btn-sm">Next →</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

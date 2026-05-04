@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — Children by Choice Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+<div id="cart-components"></div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb" style="color:rgba(255,255,255,0.6);">
+      <a href="index.html" style="color:rgba(255,255,255,0.7);">Home</a>
+      <span>›</span>
+      <span style="color:#fff;">Categories</span>
+    </div>
+    <h1>Browse by Category</h1>
+    <p>Find exactly what you're looking for — from advocacy apparel to professional resources.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Merchandise Categories -->
+    <div class="section-header">
+      <div>
+        <div class="label-sm mb-8">Merchandise</div>
+        <h2>Shop by Type</h2>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:56px;">
+
+      <!-- T-Shirts -->
+      <a href="shop.html?cat=tshirts" class="category-card" style="aspect-ratio:4/3;border-radius:12px;overflow:hidden;position:relative;display:block;cursor:pointer;">
+        <div class="img-placeholder" style="width:100%;height:100%;background:var(--purple-dark);border-radius:12px;font-size:4rem;display:flex;align-items:center;justify-content:center;">👕</div>
+        <div class="category-card-overlay">
+          <div>
+            <div class="category-card-label">T-Shirts</div>
+            <div class="category-card-count">2 products · From $45.00</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Accessories -->
+      <a href="shop.html?cat=accessories" class="category-card" style="aspect-ratio:4/3;border-radius:12px;overflow:hidden;position:relative;display:block;cursor:pointer;">
+        <div class="img-placeholder" style="width:100%;height:100%;background:var(--purple-mid);border-radius:12px;font-size:4rem;display:flex;align-items:center;justify-content:center;">👂</div>
+        <div class="category-card-overlay">
+          <div>
+            <div class="category-card-label">Accessories</div>
+            <div class="category-card-count">8 products · From $1.50</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Posters & Postcards -->
+      <a href="shop.html?cat=posters" class="category-card" style="aspect-ratio:4/3;border-radius:12px;overflow:hidden;position:relative;display:block;cursor:pointer;">
+        <div class="img-placeholder" style="width:100%;height:100%;background:#6B3FA0;border-radius:12px;font-size:4rem;display:flex;align-items:center;justify-content:center;">🖼</div>
+        <div class="category-card-overlay">
+          <div>
+            <div class="category-card-label">Posters & Postcards</div>
+            <div class="category-card-count">3 products · From $1.50</div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Artist Collaborations -->
+    <div class="section-header">
+      <div>
+        <div class="label-sm mb-8">Artist Collaborations</div>
+        <h2>Shop by Artist</h2>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:56px;">
+
+      <!-- Haus of Dizzy -->
+      <a href="shop.html?artist=hausofdizzy" style="display:block;background:var(--purple-bg);border-radius:16px;padding:32px;text-decoration:none;transition:box-shadow 0.2s;border:1px solid var(--border);" onmouseover="this.style.boxShadow='0 6px 24px rgba(74,32,96,0.15)'" onmouseout="this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;gap:20px;">
+          <div style="width:72px;height:72px;border-radius:50%;background:var(--purple-dark);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;">👂</div>
+          <div>
+            <div class="label-sm mb-8">Artist Collaboration</div>
+            <h3 style="margin-bottom:6px;">Haus of Dizzy × CbyC</h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Bold, wearable jewellery celebrating reproductive rights. 4 earring designs.</p>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:flex;align-items:center;justify-content:space-between;">
+          <span style="font-size:0.85rem;font-weight:600;color:var(--purple-mid);">4 products · $39.00 each</span>
+          <span class="btn btn-primary btn-sm">View Collection →</span>
+        </div>
+      </a>
+
+      <!-- Liberal Jane -->
+      <a href="shop.html?artist=liberaljane" style="display:block;background:var(--purple-bg);border-radius:16px;padding:32px;text-decoration:none;transition:box-shadow 0.2s;border:1px solid var(--border);" onmouseover="this.style.boxShadow='0 6px 24px rgba(74,32,96,0.15)'" onmouseout="this.style.boxShadow='none'">
+        <div style="display:flex;align-items:center;gap:20px;">
+          <div style="width:72px;height:72px;border-radius:50%;background:var(--purple-dark);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;">🎨</div>
+          <div>
+            <div class="label-sm mb-8">Artist Collaboration</div>
+            <h3 style="margin-bottom:6px;">Liberal Jane × CbyC</h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Feminist illustration across apparel, prints and accessories. 5 products.</p>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:flex;align-items:center;justify-content:space-between;">
+          <span style="font-size:0.85rem;font-weight:600;color:var(--purple-mid);">5 products · From $1.50</span>
+          <span class="btn btn-primary btn-sm">View Collection →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Resources Section -->
+    <div style="background:var(--purple-dark);border-radius:20px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+      <div>
+        <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:12px;">Healthcare Professionals</div>
+        <h2 style="color:#fff;margin-bottom:16px;">Professional Resources</h2>
+        <p style="color:rgba(255,255,255,0.8);font-size:0.95rem;line-height:1.7;">Clinical booklets, digital PDFs and educational materials for health practitioners and clinics across Queensland. Physical resources are $0 + $10 flat shipping.</p>
+        <div style="display:flex;gap:12px;margin-top:28px;">
+          <a href="resources.html" class="btn btn-pink btn-lg">Order Resources</a>
+          <a href="account.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;">Sign In</a>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:8px;">📋</div>
+          <div style="color:#fff;font-weight:700;font-size:0.9rem;">RCA Booklets</div>
+          <div style="color:rgba(255,255,255,0.65);font-size:0.8rem;margin-top:4px;">Physical print</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:8px;">📄</div>
+          <div style="color:#fff;font-weight:700;font-size:0.9rem;">Digital PDFs</div>
+          <div style="color:rgba(255,255,255,0.65);font-size:0.8rem;margin-top:4px;">Instant download</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:8px;">🏥</div>
+          <div style="color:#fff;font-weight:700;font-size:0.9rem;">Clinic Packs</div>
+          <div style="color:rgba(255,255,255,0.65);font-size:0.8rem;margin-top:4px;">Bulk orders</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;text-align:center;">
+          <div style="font-size:2rem;margin-bottom:8px;">🆓</div>
+          <div style="color:#fff;font-weight:700;font-size:0.9rem;">Free Resources</div>
+          <div style="color:rgba(255,255,255,0.65);font-size:0.8rem;margin-top:4px;">$0 + shipping</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
