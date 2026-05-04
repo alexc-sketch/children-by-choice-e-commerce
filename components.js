@@ -1,6 +1,20 @@
 // Shared header and footer components
 
 const HEADER_HTML = `
+<!-- Dev Bar -->
+<div style="background:#1a1a2e;padding:8px 0;font-size:0.78rem;font-family:'DM Sans',sans-serif;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <span style="background:#4A2060;color:#fff;border-radius:50px;padding:2px 10px;font-weight:700;font-size:0.7rem;letter-spacing:0.06em;">MOCKUP</span>
+      <span style="color:rgba(255,255,255,0.5);">Children by Choice — WooCommerce Subdomain Prototype</span>
+    </div>
+    <a href="nav.html" style="color:#C8B8E8;font-weight:600;display:inline-flex;align-items:center;gap:6px;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#C8B8E8'">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Page Index
+    </a>
+  </div>
+</div>
+
 <!-- Utility Bar -->
 <div class="utility-bar">
   <div class="container">

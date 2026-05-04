@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body { background: var(--purple-bg); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
-    .nav-card { background: #fff; border-radius: 20px; padding: 48px; max-width: 700px; width: 100%; box-shadow: 0 8px 40px rgba(74,32,96,0.12); }
+    .nav-card { background: #fff; border-radius: 20px; padding: 48px; max-width: 740px; width: 100%; box-shadow: 0 8px 40px rgba(74,32,96,0.12); }
     .nav-card h1 { font-size: 1.6rem; margin-bottom: 6px; }
     .nav-card .subtitle { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 36px; }
     .page-list { display: flex; flex-direction: column; gap: 12px; }
@@ -24,19 +24,27 @@
     .page-info { flex: 1; }
     .page-name { font-weight: 700; font-size: 1rem; color: var(--text-dark); }
     .page-desc { font-size: 0.82rem; color: var(--text-muted); margin-top: 2px; }
-    .page-tag { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 50px; }
+    .page-tag { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 50px; white-space: nowrap; }
     .tag-merch { background: var(--purple-bg); color: var(--purple-dark); }
     .tag-b2b { background: var(--pink-light); color: var(--purple-dark); }
     .tag-flow { background: #e8f5e9; color: #2a9d5c; }
     .tag-global { background: var(--grey-bg); color: var(--text-muted); border: 1px solid var(--border); }
-    .section-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin: 24px 0 10px; }
+    .tag-utility { background: #fff8e1; color: #b07d00; border: 1px solid #f0d060; }
+    .section-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin: 28px 0 10px; }
   </style>
 </head>
 <body>
   <div class="nav-card">
-    <h1>CbyC Shop — Mockup Index</h1>
-    <p class="subtitle">High-fidelity interactive mockup for the Children by Choice WooCommerce subdomain. Click any page to preview.</p>
 
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px;">
+      <div style="width:44px;height:44px;background:var(--purple-dark);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;">🛍</div>
+      <div>
+        <h1 style="margin-bottom:2px;">CbyC Shop — Mockup Index</h1>
+        <p class="subtitle" style="margin-bottom:0;">High-fidelity interactive mockup · Children by Choice WooCommerce Subdomain</p>
+      </div>
+    </div>
+
+    <!-- Core Pages -->
     <div class="section-label">Core Pages</div>
     <div class="page-list">
 
@@ -44,7 +52,7 @@
         <div class="page-icon">🏠</div>
         <div class="page-info">
           <div class="page-name">Homepage / Gateway</div>
-          <div class="page-desc">Split-screen B2C/B2B routing, featured products, category strip, newsletter</div>
+          <div class="page-desc">Hero banner with dual CTAs, featured merch, In Your Words block, category strip, resources CTA</div>
         </div>
         <span class="page-tag tag-merch">Homepage</span>
       </a>
@@ -53,7 +61,7 @@
         <div class="page-icon">🛍</div>
         <div class="page-info">
           <div class="page-name">Shop All Merchandise</div>
-          <div class="page-desc">Full product catalogue with filter sidebar, sort, and product grid</div>
+          <div class="page-desc">Full product catalogue with filter sidebar, sort toolbar, and 11-product grid</div>
         </div>
         <span class="page-tag tag-merch">Shop All</span>
       </a>
@@ -62,7 +70,7 @@
         <div class="page-icon">📂</div>
         <div class="page-info">
           <div class="page-name">Categories</div>
-          <div class="page-desc">Category grid, artist collaboration cards, resources CTA panel</div>
+          <div class="page-desc">Category grid, Haus of Dizzy & Liberal Jane artist cards, resources CTA panel</div>
         </div>
         <span class="page-tag tag-merch">Categories</span>
       </a>
@@ -71,13 +79,14 @@
         <div class="page-icon">👕</div>
         <div class="page-info">
           <div class="page-name">Product Detail — Variable</div>
-          <div class="page-desc">Gallery, colour/size swatches, stock status, tabs, related products</div>
+          <div class="page-desc">Gallery, colour/size swatches, stock status, tabs (Description, Shipping, Reviews), related products</div>
         </div>
         <span class="page-tag tag-merch">Product</span>
       </a>
 
     </div>
 
+    <!-- Purchase Flow -->
     <div class="section-label">Purchase Flow</div>
     <div class="page-list">
 
@@ -85,7 +94,7 @@
         <div class="page-icon">🛒</div>
         <div class="page-info">
           <div class="page-name">Cart</div>
-          <div class="page-desc">Cart table, quantity controls, coupon code, order summary sidebar</div>
+          <div class="page-desc">Cart table, quantity controls, coupon code, order summary sidebar with shipping notice</div>
         </div>
         <span class="page-tag tag-flow">Cart</span>
       </a>
@@ -94,7 +103,7 @@
         <div class="page-icon">💳</div>
         <div class="page-info">
           <div class="page-name">Checkout</div>
-          <div class="page-desc">Contact, shipping address, shipping method, payment, order summary</div>
+          <div class="page-desc">Contact, shipping address, standard shipping ($10), payment options, sticky order summary</div>
         </div>
         <span class="page-tag tag-flow">Checkout</span>
       </a>
@@ -103,13 +112,14 @@
         <div class="page-icon">✅</div>
         <div class="page-info">
           <div class="page-name">Order Confirmation</div>
-          <div class="page-desc">Success state, order details, shipping info, what's next steps</div>
+          <div class="page-desc">Success state, order details, shipping info, what's next steps, support CTA</div>
         </div>
         <span class="page-tag tag-flow">Confirmation</span>
       </a>
 
     </div>
 
+    <!-- Professional Resources (B2B) -->
     <div class="section-label">Professional Resources (B2B)</div>
     <div class="page-list">
 
@@ -117,16 +127,48 @@
         <div class="page-icon">📋</div>
         <div class="page-info">
           <div class="page-name">Order Resources</div>
-          <div class="page-desc">B2B resource catalogue with format filter, shipping notice banner</div>
+          <div class="page-desc">B2B resource catalogue, In Your Words block, digital download CTA, FAQ accordion</div>
         </div>
         <span class="page-tag tag-b2b">Resources</span>
       </a>
 
     </div>
 
-    <div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--border);font-size:0.8rem;color:var(--text-muted);text-align:center;">
-      Children by Choice Shop — WooCommerce Subdomain Mockup · May 2026
+    <!-- Account -->
+    <div class="section-label">Account</div>
+    <div class="page-list">
+
+      <a href="account.html" class="page-link">
+        <div class="page-icon">👤</div>
+        <div class="page-info">
+          <div class="page-name">My Account / Login</div>
+          <div class="page-desc">Login form, registration form, My Account dashboard with Orders, Downloads, Addresses tabs</div>
+        </div>
+        <span class="page-tag tag-global">Account</span>
+      </a>
+
     </div>
+
+    <!-- Utility & Legal -->
+    <div class="section-label">Utility & Legal</div>
+    <div class="page-list">
+
+      <a href="policy.html" class="page-link">
+        <div class="page-icon">📄</div>
+        <div class="page-info">
+          <div class="page-name">Policy Template — Shipping & Returns</div>
+          <div class="page-desc">Sticky table of contents, policy sections (Merch Shipping, Resource Shipping, Returns, Digital Downloads), contact card</div>
+        </div>
+        <span class="page-tag tag-utility">Policy</span>
+      </a>
+
+    </div>
+
+    <div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <span style="font-size:0.8rem;color:var(--text-muted);">Children by Choice Shop — WooCommerce Subdomain Mockup · May 2025</span>
+      <a href="https://github.com/alexc-sketch/children-by-choice-e-commerce" target="_blank" style="font-size:0.8rem;color:var(--purple-mid);font-weight:600;text-decoration:underline;">View on GitHub →</a>
+    </div>
+
   </div>
 </body>
 </html>
